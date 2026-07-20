@@ -8,6 +8,7 @@
 # checking if I have the latest files from github
 #echo "Checking for newer files online first"
 #git pull
+#rm -r /home/demo/CARLI/mylastarch-pkgbuild/mylastarch-calamares-config/
 
 cd x86_64
 sh update_repo.sh
@@ -20,12 +21,14 @@ echo "####################################"
 echo "Write your commit comment!"
 echo "####################################"
 
-#read input
-input="update"
+read input
+#input="update"
+
 
 # Committing to the local repository with a message containing the time details and commit text
 
 git commit -m "$input"
+
 
 # Push the local files to github
 
